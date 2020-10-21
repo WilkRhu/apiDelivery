@@ -20,6 +20,18 @@ const recipeLimit = [{
 
 }];
 
+const recipeLimitEmpty = [{
+  recipes: [{
+    
+  }]
+}, {
+
+  recipes: [{
+    
+  }]
+
+}];
+
 const gifReturn = [
   'https://media2.giphy.com/media/ggFQNyOaqaLsOfDhPf/giphy.gif?cid=757dbf07nefy0l76k51tv5wgdbuvsftp214nu5czb0jrnlat&rid=giphy.gif',
   'https://media4.giphy.com/media/MB6Slgbs0fTwTGlL2K/giphy.gif?cid=757dbf07uvm31h1puunb1wdfgt7f9m5531hm4m1n2qptdndm&rid=giphy.gif'
@@ -40,5 +52,6 @@ module.exports = {
   recipeLimit,
   gifReturn,
   value,
-  keyReturn
+  keyReturn,
+  recipeLimitEmpty
 }
