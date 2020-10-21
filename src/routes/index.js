@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const recipePuppy = require('../api/controller/recipePuppy');
+const recipePuppyController = require('../api/controller/recipePuppyController');
 
-router.get('/recipes', recipePuppy.returnRecipe);
+router.get('/recipes', recipePuppyController.returnRecipe);
 
 module.exports = router;

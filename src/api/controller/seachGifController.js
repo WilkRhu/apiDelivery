@@ -1,6 +1,6 @@
-const gifApi = require('../../service/externalApi/gifAPi');
+const gifApi = require('../service/externalApi/gifAPi');
 
-const returnGifs = async (array) => {
+const searchGif = async (array) => {
   const arrayGifs = [];
   const arrayTwoGifs = [];
   for (let i = 0; i < array.length; i++) {
@@ -14,4 +14,4 @@ const returnGifs = async (array) => {
   return arrayTwoGifs;
 }
 
-module.exports = returnGifs;
+module.exports = searchGif;

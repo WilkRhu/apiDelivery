@@ -1,8 +1,7 @@
 const api = require('../service/externalApi/recipApi');
 const routeValidation = require('../validations/routeValidations');
-const convertString = require('../utils/convertString');
-const limitApiRecipe = require('../utils/limitAPiRecipe');
-const returnGifs = require('../utils/SearchGif/returnGifs');
+const { convertString, limitApiRecipe } = require('../utils/logicFunctions');
+const searchGif = require('./seachGifController');
 const contractReturn = require('../service/contractReturn/contractReturn');
 
 const returnRecipe = async (req, res) => {
@@ -19,7 +18,7 @@ const returnRecipe = async (req, res) => {
       if (!error) {
         const recipe = await api.get(`/?i=${value.ig1},${value.ig2},${value.ig3}`);
         const recipeLimit =  await limitApiRecipe(recipe);
-        const gifReturn = await returnGifs(recipeLimit);
+        const gifReturn = await searchGif(recipeLimit);
         const objectReturn  = await contractReturn(recipeLimit, gifReturn, value);
         return res.status(200).json(objectReturn);
       }
