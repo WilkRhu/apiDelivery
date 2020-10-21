@@ -1,7 +1,7 @@
 const api = require('../service/externalApi/recipApi');
 const routeValidation = require('../validations/routeValidations');
 const { convertString, limitApiRecipe } = require('../utils/logicFunctions');
-const searchGif = require('./seachGifController');
+const searchGif = require('./searchGifController');
 const contractReturn = require('../service/contractReturn/contractReturn');
 
 const returnRecipe = async (req, res) => {
