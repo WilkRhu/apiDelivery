@@ -10,7 +10,6 @@
     <li><a href="#pcus">Pacotes Usados</a></li>
     <li><a href="#end">EndPoints</a></li>
     <li><a href="#func">Funções Logicas</a></li>
-    <li><a href="#var">Variáveis de ambiente</a></li>
 </ul>
 <hr>
 <h2><a name="feature">Features</a></h2>
@@ -125,7 +124,7 @@ http://localhost:3000/recipes/?i=tomato,radish,onion
 <p>Retorno deve aparecer dessa forma:</p>
 <img src="https://user-images.githubusercontent.com/29145254/96767004-4d7bd680-13b2-11eb-861f-33ff6ace7098.PNG" />
 <hr>
-<h2>Funções Lógicas</h2>
+<h2><a href="func">Funções Lógicas</a></h2>
 <code>src/utils/logicFunctions.js</code>
 <br>
 <b>limitApiRecipe</b>
